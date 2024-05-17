@@ -2,6 +2,10 @@
 
 ###
 
+<p align="left">A passionate Full 'Stuck' Javascript Wannabe and Design Enthusiast from Sriwijaya University, Indonesia. Good to see you!</p>
+
+###
+
 <div align="left">
   <a href="mailto:iamyourdre@gmail.com" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
@@ -17,9 +21,6 @@
   </a>
 </div>
 
-###
-
-<p align="left">A passionate Full 'Stuck' Javascript Wannabe and Design Enthusiast from Sriwijaya University, Indonesia. Good to see you!</p>
 
 ###
 
