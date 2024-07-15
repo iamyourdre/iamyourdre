@@ -3,9 +3,10 @@
 ###
 
 <p align="left">A passionate Full 'Stuck' Javascript Wannabe and Design Enthusiast from Sriwijaya University, Indonesia. Good to see you!</p>
-See my [Curriculum Vitae](https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing)
 
 ###
+
+Reach my [Curriculum Vitae](https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing)
 
 ###
 
