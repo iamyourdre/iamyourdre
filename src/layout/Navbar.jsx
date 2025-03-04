@@ -11,6 +11,21 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from '@/components/ui/button'
 
+const navLinks = [
+  {
+    title: 'My Profile',
+    url: '/dev',
+  },
+  {
+    title: 'Works & Volunteers',
+    url: '/dev/wnv',
+  },
+  {
+    title: 'Projects',
+    url: '/dev/projects',
+  },
+];
+
 const Navbar = () => {
   return (
     <div className='flex w-full box py-5 px-4 md:px-10 justify-start items-center bg-background/10 backdrop-blur-md'>
@@ -20,21 +35,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden pl-5 md:flex flex-1 gap-3">
-        <Link to={'/dev'}>
-          <span className="mx-2 text-sm font-medium">
-            My Profile
-          </span>
-        </Link>
-        <Link to={'/dev/wnv'}>
-          <span className="mx-2 text-sm font-medium">
-            Works & Volunteers
-          </span>
-        </Link>
-        <Link to={'/dev/projects'}>
-          <span className="mx-2 text-sm font-medium">
-            Projects
-          </span>
-        </Link>
+        {navLinks.map((link, index) => (
+          <Link key={index} to={link.url} className='text-sm font-medium mx-3'>{link.title}</Link>
+        ))}
       </div>
       <Link to="https://www.linkedin.com/in/iamyourdre/">
         <Button className="hidden md:flex mr-2" variant="outline"><Linkedin /> LinkedIn</Button>
@@ -54,9 +57,9 @@ export function Dropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-52 border-border mx-8 mt-2">
         <DropdownMenuGroup>
-          <DropdownMenuItem>My Profile</DropdownMenuItem>
-          <DropdownMenuItem>Works & Volunteers</DropdownMenuItem>
-          <DropdownMenuItem>Projects</DropdownMenuItem>
+          {navLinks.map((link, index) => (
+            <DropdownMenuItem key={index} as={Link} to={link.url} className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+          ))}
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
