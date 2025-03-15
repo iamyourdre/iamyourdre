@@ -13,35 +13,38 @@ import { Button } from '@/components/ui/button'
 
 const navLinks = [
   {
-    title: 'My Profile',
-    url: '/dev',
+    title: 'About Me',
+    url: '/me',
   },
   {
-    title: 'Works & Volunteers',
-    url: '/dev/wnv',
+    title: 'Experience',
+    url: '/exp',
   },
   {
-    title: 'Projects',
-    url: '/dev/projects',
+    title: 'Project',
+    url: '/project',
   },
 ];
 
 const Navbar = () => {
   return (
-    <div className='flex w-full box py-5 px-4 md:px-10 justify-start items-center bg-background/10 backdrop-blur-md'>
-      <div className="flex-1 md:flex-none flex gap-3 ">
-        <Link to="/" className='font-[1000] text-lg flex-1 md:flex-none flex items-center'>
-          <Asterisk size={20} /><span className="font-extrabold">DRE</span>.
+    <div className='fixed w-full box flex lg:grid lg:grid-cols-4 items-center z-10'>
+      <div className="flex gap-3 lg:col-span-1">
+        <Link to="/" className='font-[1000] text-2xl flex-1 flex'>
+          <span className="font-bold">Dre</span>.
         </Link>
+        <Asterisk size={30} className='hover:animate-[spin_1.5s_ease-in-out_infinite] '/>
       </div>
-      <div className="hidden pl-5 md:flex flex-1 gap-3">
+      <div className="hidden flex-1 md:flex pl-5 gap-3 justify-center md:col-span-2 items-center">
         {navLinks.map((link, index) => (
           <Link key={index} to={link.url} className='text-sm font-medium mx-3'>{link.title}</Link>
         ))}
       </div>
-      <Link to="https://www.linkedin.com/in/iamyourdre/">
-        <Button className="hidden md:flex mr-2" variant="outline"><Linkedin /> LinkedIn</Button>
-      </Link>
+      <div className="flex flex-1 md:flex-none justify-end lg:col-span-1">
+        <Link to="https://www.linkedin.com/in/iamyourdre/">
+          <Button className="mr-2" variant="ghost"><Linkedin/> LinkedIn</Button>
+        </Link>
+      </div>
       <div className="md:hidden">
         <Dropdown/>
       </div>
@@ -53,9 +56,11 @@ export function Dropdown() {
   return (
     <DropdownMenu >
       <DropdownMenuTrigger asChild>
-        <Menu size={27} className='hover:text-teal-500 transition duration-200 ease-in-out'/>
+        <Button className="flex gap-2">
+          <Menu />
+        </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-52 border-border mx-8 mt-2">
+      <DropdownMenuContent className="w-52 border-border box-m mt-2">
         <DropdownMenuGroup>
           {navLinks.map((link, index) => (
             <DropdownMenuItem key={index} as={Link} to={link.url} className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>

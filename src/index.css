@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
-
-@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: oklch(1 0 0);
@@ -116,12 +115,18 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-    font-family: 'Inter Tight', sans-serif;
-  }
   body {
-    @apply bg-neutral-100 text-neutral-800;
-    font-family: 'Inter Tight', sans-serif;
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
+  .box {
+    @apply py-4 pr-4 pl-5 md:py-7 md:pr-5 md:pl-6;
+  }
+  .box-m {
+    @apply my-4 mr-4 ml-5 md:my-7 md:mr-5 md:ml-6;
+  }
+  
+
 }

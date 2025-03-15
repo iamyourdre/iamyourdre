@@ -1,17 +1,22 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Dev from './pages/dev/Dev';
-import Dzgn from './pages/dzgn/Dzgn';
+import './App.css';
 import Main from './layout/Main';
+import Index from './pages/Index';
+import { useContext } from 'react';
+import { ThemeContext } from './contexts/ThemeContext';
 
 function App() {
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
     <Router>
       <Main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dev" element={<Dev />} />
-          <Route path="/dzgn" element={<Dzgn />} />
+          <Route path="/" element={<Index />} />
         </Routes>
       </Main>
     </Router>

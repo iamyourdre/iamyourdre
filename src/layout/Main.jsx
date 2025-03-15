@@ -1,11 +1,13 @@
-import Navbar from './Navbar';
+import Navbar from '@/components/slicing/Navbar';
 import React from 'react';
 
 const Main = ({ children }) => {
   return (
     <div>
       <Navbar />
-      {children}
+      <div className="z-0">
+        {children}
+      </div>
     </div>
   );
 }
