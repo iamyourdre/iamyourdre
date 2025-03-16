@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import * as THREE from 'three'
 import HALO from 'vanta/dist/vanta.halo.min'
-import { TypeAnimation } from 'react-type-animation';
 
 const Slide1 = () => {
   const vantaRef = useRef(null)
@@ -83,20 +82,9 @@ const Slide1 = () => {
 
         <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18'>
           <div className="flex flex-col gap-6">
-            <h1 className='text-6xl lg:text-7xl font-medium'>
+            <h1 className='text-6xl lg:text-7xl font-black'>
               Hello, World!<br />
-              <TypeAnimation
-                sequence={[
-                  "I'm Adrian Sutansaty",
-                  2000,
-                  "I'm Web Developer",
-                  2000,
-                  "I'm Web3 Learner",
-                  2000,
-                ]}
-                speed={50}
-                repeat={Infinity}
-              />.     
+              This Is Adrian.     
             </h1>
             <div className="flex gap-2">
               <Button size='lg'> Dive Down <ChevronsDown /></Button>

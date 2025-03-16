@@ -1,5 +1,5 @@
 import { Menu, Asterisk, Linkedin } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import {
@@ -27,8 +27,9 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+
   return (
-    <div className='fixed w-full box flex lg:grid lg:grid-cols-4 items-center z-10'>
+    <div className="w-full flex md:grid grid-cols-4 gap-3 p-5 fixed top-0 left-0 right-0 z-50 text-foreground"> 
       <div className="flex gap-3 lg:col-span-1">
         <Link to="/" className='font-[1000] text-2xl flex-1 flex'>
           <span className="font-bold">Dre</span>.
@@ -40,7 +41,7 @@ const Navbar = () => {
           <Link key={index} to={link.url} className='text-sm font-medium mx-3'>{link.title}</Link>
         ))}
       </div>
-      <div className="flex flex-1 md:flex-none justify-end lg:col-span-1">
+      <div className="flex-1 flex md:flex-none justify-end lg:col-span-1">
         <Link to="https://www.linkedin.com/in/iamyourdre/">
           <Button className="mr-2" variant="ghost"><Linkedin/> LinkedIn</Button>
         </Link>

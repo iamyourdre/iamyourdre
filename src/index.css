@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('./assets/MonumentExtended-Ultrabold.otf') format('opentype');
+}
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -127,6 +131,11 @@
   .box-m {
     @apply my-4 mr-4 ml-5 md:my-7 md:mr-5 md:ml-6;
   }
+  .font-monument {
+    font-family: 'MonumentExtended', sans-serif;
+  }
+  .font-inter {
+    font-family: 'Inter Tight', sans-serif;
+  }
   
-
 }
