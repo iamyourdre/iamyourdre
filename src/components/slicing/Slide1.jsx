@@ -10,20 +10,20 @@ const Slide1 = () => {
   const [opacity, setOpacity] = useState(1)
 
   useEffect(() => {
-    const vantaEffect = HALO({
-      el: vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: true,
-      minHeight: 200,
-      minWidth: 200,
-      amplitudeFactor: 8,
-      shininess: 50,
-      xOffset: 0.5,
-      yOffset: 0.5,
-      size: 2,
-      THREE: THREE
-    })
+    // const vantaEffect = HALO({
+    //   el: vantaRef.current,
+    //   mouseControls: true,
+    //   touchControls: true,
+    //   gyroControls: true,
+    //   minHeight: 200,
+    //   minWidth: 200,
+    //   amplitudeFactor: 8,
+    //   shininess: 50,
+    //   xOffset: 0.5,
+    //   yOffset: 0.5,
+    //   size: 2,
+    //   THREE: THREE
+    // })
   
     const handleScroll = () => {
       const scrollTop = window.scrollY
@@ -39,7 +39,7 @@ const Slide1 = () => {
     window.addEventListener('scroll', handleScroll)
   
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
+      // if (vantaEffect) vantaEffect.destroy()
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -62,8 +62,8 @@ const Slide1 = () => {
   ]
 
   return (
-    <div ref={vantaRef} className='fixed h-screen w-full overflow-x-hidden' style={{ opacity }}>
-      <div className="h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background/60 md:bg-transparent">
+    <div ref={vantaRef} className='fixed min-h-screen w-full overflow-x-hidden' style={{ opacity }}>
+      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background/60 md:bg-transparent ">
 
         <div className='md:col-span-1 hidden md:flex justify-left items-center text-sm text-muted-foreground font-semibold'>
           <div className="flex gap-6">
@@ -80,11 +80,11 @@ const Slide1 = () => {
           </div>
         </div>
 
-        <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18'>
-          <div className="flex flex-col gap-6">
-            <h1 className='text-6xl lg:text-7xl font-black'>
+        <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18 lg:gap-20'>
+          <div className="flex flex-col gap-6 pt-36 md:pt-0">
+            <h1 className='text-6xl lg:text-7xl font-bold '>
               Hello, World!<br />
-              This Is Adrian.     
+              I'm Adrian Sutansaty.     
             </h1>
             <div className="flex gap-2">
               <Button size='lg'> Dive Down <ChevronsDown /></Button>
@@ -92,8 +92,10 @@ const Slide1 = () => {
             </div>
           </div>
           <div className="text-sm flex flex-col gap-8">
-            <div className="text-sm text-muted-foreground col-span-2 text-justify">
-              A recent graduate of <span className='text-foreground'>Informatics Engineering</span> with strong passion in <span className='text-foreground'>Web Dev, specializing in Javascript and modern frameworks like React.js, Express.js, etc</span>. Having strong experience on <span className='text-foreground'>Web3, and crypto culture</span>. Experienced in leadership roles within projects and student organizations,. Motivated to contribute in an innovative and dynamic environment.
+            <div className="grid lg:grid-cols-3">
+              <div className="text-sm text-muted-foreground col-span-2 text-justify">
+                A recent graduate of <span className='text-foreground'>Informatics Engineering</span> with strong passion in <span className='text-foreground'>Web Development</span>. Having strong experience on <span className='text-foreground'>Web3, and crypto culture</span>. Able to work in a team, lead projects, communicate, and think creatively in doing something. Let's connect!
+              </div>
             </div>
             <div className="flex gap-4 col-span-1 justify-start items-start">
               {contact.map((item, index) => (

@@ -1,10 +1,10 @@
 import React from 'react'
-import { Github } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Slide1 from '@/components/slicing/Slide1';
 import Slide2 from '@/components/slicing/Slide2';
 import Slide3 from '@/components/slicing/Slide3';
+import Slide3v2 from '@/components/slicing/Slide3v2';
 
 const Index = () => {
   const { ref, inView } = useInView({
@@ -24,7 +24,7 @@ const Index = () => {
       </motion.div>
 
       <Slide2 />
-      <Slide3 />
+      <Slide3v2/>
     </div>
   )
 }

@@ -119,6 +119,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', sans-serif;
@@ -126,10 +129,10 @@
     font-style: normal;
   }
   .box {
-    @apply py-4 pr-4 pl-5 md:py-7 md:pr-5 md:pl-6;
+    @apply py-7 px-5 md:px-6;
   }
   .box-m {
-    @apply my-4 mr-4 ml-5 md:my-7 md:mr-5 md:ml-6;
+    @apply my-7 mx-5 md:mx-6;
   }
   .font-monument {
     font-family: 'MonumentExtended', sans-serif;

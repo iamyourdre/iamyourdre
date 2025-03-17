@@ -29,14 +29,14 @@ const navLinks = [
 const Navbar = () => {
 
   return (
-    <div className="w-full flex md:grid grid-cols-4 gap-3 p-5 fixed top-0 left-0 right-0 z-50 text-foreground"> 
+    <div className="w-full flex md:grid grid-cols-4 gap-3 box fixed top-0 left-0 right-0 z-50 text-foreground items-center"> 
       <div className="flex gap-3 lg:col-span-1">
         <Link to="/" className='font-[1000] text-2xl flex-1 flex'>
           <span className="font-bold">Dre</span>.
         </Link>
         <Asterisk size={30} className='hover:animate-[spin_1.5s_ease-in-out_infinite] '/>
       </div>
-      <div className="hidden flex-1 md:flex pl-5 gap-3 justify-center md:col-span-2 items-center">
+      <div className="hidden flex-1 md:flex pl-5 gap-3 justify-center md:col-span-2">
         {navLinks.map((link, index) => (
           <Link key={index} to={link.url} className='text-sm font-medium mx-3'>{link.title}</Link>
         ))}
