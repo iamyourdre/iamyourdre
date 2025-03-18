@@ -17,12 +17,9 @@ const Slide2 = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ y: '100vh'}}
-      animate={{ y: 0 }}
-      transition={{ type: "inertia"}}
+    <div
       className='w-full overflow-hidden bg-background box flex flex-col pt-10 gap-2 text-4xl lg:text-8xl leading-7 lg:leading-17.5'
-      id='slide2'
+      id='about-intro'
     >
       <motion.div
         style={{ x: -scrollY * 0.05 }}
@@ -44,7 +41,7 @@ const Slide2 = () => {
         <h1>2020 - 2024</h1>
         <h1 className='text-right'>GPA 3.98 / 4.00</h1>
       </div> */}
-    </motion.div>
+    </div>
   )
 }
 

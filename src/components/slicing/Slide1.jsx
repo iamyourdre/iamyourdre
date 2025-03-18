@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ChevronsDown, Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import * as THREE from 'three'
@@ -44,6 +44,13 @@ const Slide1 = () => {
     }
   }, [])
 
+  const handleDiveDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    })
+  }
+
   const hardSkills = [
     'Frontend', 'Backend', 'Graphic', 'UIUX', 'Web3'
   ]
@@ -82,12 +89,12 @@ const Slide1 = () => {
 
         <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18 lg:gap-20'>
           <div className="flex flex-col gap-6 pt-36 md:pt-0">
-            <h1 className='text-6xl lg:text-7xl font-bold '>
-              Hello, World!<br />
-              I'm Adrian Sutansaty.     
+            <h1 className='text-6xl lg:text-7xl font-black'>
+              Hello, <span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'>World!</span><br />
+              I'm Adrian Sutansaty.
             </h1>
             <div className="flex gap-2">
-              <Button size='lg'> Dive Down <ChevronsDown /></Button>
+              <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
               <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>Download CV</Button>
             </div>
           </div>

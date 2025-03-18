@@ -23,8 +23,16 @@ const Index = () => {
         <Slide1 />
       </motion.div>
 
-      <Slide2 />
-      <Slide3v2/>
+
+      <motion.div
+        initial={{ y: '100vh'}}
+        animate={{ y: 0 }}
+        transition={{ type: "inertia"}}
+        className=''
+      >
+        <Slide2 />
+        <Slide3v2/>
+      </motion.div>
     </div>
   )
 }
