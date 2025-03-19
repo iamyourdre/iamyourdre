@@ -26,10 +26,10 @@ const navLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ref}) => {
 
   return (
-    <div className="w-full flex md:grid grid-cols-4 gap-3 box fixed top-0 left-0 right-0 z-50 text-foreground items-center"> 
+    <div ref={ref} className="w-full flex md:grid grid-cols-4 gap-3 box fixed top-0 left-0 right-0 z-50 text-foreground items-center"> 
       <div className="flex gap-3 lg:col-span-1">
         <Link to="/" className='font-[1000] text-2xl flex-1 flex'>
           <span className="font-bold">Dre</span>.

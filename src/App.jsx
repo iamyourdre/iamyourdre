@@ -4,6 +4,7 @@ import Main from './layout/Main';
 import Index from './pages/Index';
 import { useContext } from 'react';
 import { ThemeContext } from './contexts/ThemeContext';
+import Tweetify from './pages/portfolio/Tweetify';
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,6 +18,7 @@ function App() {
       <Main>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/portfolio/tweetify" element={<Tweetify />} />
         </Routes>
       </Main>
     </Router>

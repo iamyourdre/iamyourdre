@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Slide1 from '@/components/slicing/Slide1';
-import Slide2 from '@/components/slicing/Slide2';
-import Slide3 from '@/components/slicing/Slide3';
-import Slide3v2 from '@/components/slicing/Slide3v2';
+import Hero from '@/components/slicing/Hero';
+// import Intro from '@/components/slicing/Intro';
+import Profile from '@/components/slicing/Profile';
+import Portfolio from '@/components/slicing/Portfolio';
 
 const Index = () => {
   const { ref, inView } = useInView({
@@ -20,7 +20,7 @@ const Index = () => {
         animate={{ opacity: inView ? 1 : 0 }}
         transition={{ duration: 1 }}
       >
-        <Slide1 />
+        <Hero />
       </motion.div>
 
 
@@ -30,8 +30,9 @@ const Index = () => {
         transition={{ type: "inertia"}}
         className=''
       >
-        <Slide2 />
-        <Slide3v2/>
+        {/* <Intro /> */}
+        <Profile/>
+        <Portfolio/>
       </motion.div>
     </div>
   )

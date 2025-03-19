@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 import * as THREE from 'three'
 import HALO from 'vanta/dist/vanta.halo.min'
 
-const Slide1 = () => {
+const Hero = () => {
   const vantaRef = useRef(null)
   const [opacity, setOpacity] = useState(1)
 
@@ -89,7 +89,7 @@ const Slide1 = () => {
 
         <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18 lg:gap-20'>
           <div className="flex flex-col gap-6 pt-36 md:pt-0">
-            <h1 className='text-6xl lg:text-7xl font-black'>
+            <h1 className='h1-dre font-black'>
               Hello, <span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'>World!</span><br />
               I'm Adrian Sutansaty.
             </h1>
@@ -98,9 +98,9 @@ const Slide1 = () => {
               <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>Download CV</Button>
             </div>
           </div>
-          <div className="text-sm flex flex-col gap-8">
+          <div className="h3-dre flex flex-col gap-8">
             <div className="grid lg:grid-cols-3">
-              <div className="text-sm text-muted-foreground col-span-2 text-justify">
+              <div className="text-muted-foreground col-span-2 text-justify">
                 A recent graduate of <span className='text-foreground'>Informatics Engineering</span> with strong passion in <span className='text-foreground'>Web Development</span>. Having strong experience on <span className='text-foreground'>Web3, and crypto culture</span>. Able to work in a team, lead projects, communicate, and think creatively in doing something. Let's connect!
               </div>
             </div>
@@ -121,4 +121,4 @@ const Slide1 = () => {
   )
 }
 
-export default Slide1
+export default Hero

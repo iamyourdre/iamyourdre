@@ -140,5 +140,16 @@
   .font-inter {
     font-family: 'Inter Tight', sans-serif;
   }
-  
+  .bg-dre-accent {
+    @apply bg-indigo-500;
+  }
+  .h1-dre {
+    @apply text-5xl md:text-6xl lg:text-7xl ;
+  }
+  .h2-dre {
+    @apply text-lg;
+  }
+  .h3-dre {
+    @apply text-sm ;
+  }
 }

@@ -18,7 +18,7 @@ const Slide2 = () => {
 
   return (
     <div
-      className='w-full overflow-hidden bg-background box flex flex-col pt-10 gap-2 text-4xl lg:text-8xl leading-7 lg:leading-17.5'
+      className='w-full overflow-hidden bg-background box flex flex-col pt-10 gap-2 h1-dre leading-10 md:leading-12 lg:leading-17.5 font-[1000]'
       id='about-intro'
     >
       <motion.div
@@ -30,7 +30,7 @@ const Slide2 = () => {
       </motion.div>
       <motion.div
         style={{ x: scrollY * 0.05 }}
-        className="text-right pr-7 font-[1000]"
+        className="text-right pr-7"
       >
         <h1>KNOW.ME</h1>
         <h1>BETTER</h1>
