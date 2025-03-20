@@ -13,8 +13,8 @@ const Hero = () => {
     // const vantaEffect = HALO({
     //   el: vantaRef.current,
     //   mouseControls: true,
-    //   touchControls: true,
-    //   gyroControls: true,
+    //   // touchControls: true,
+    //   // gyroControls: true,
     //   minHeight: 200,
     //   minWidth: 200,
     //   amplitudeFactor: 8,
@@ -70,7 +70,7 @@ const Hero = () => {
 
   return (
     <div ref={vantaRef} className='fixed min-h-screen w-full overflow-x-hidden' style={{ opacity }}>
-      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background">
+      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background/60 md:bg-transparent">
 
         <div className='md:col-span-1 hidden md:flex justify-left items-center text-sm text-muted-foreground font-semibold'>
           <div className="flex gap-6">

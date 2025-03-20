@@ -11,6 +11,13 @@ const Profile = () => {
     threshold: 0.4, 
   });
   const aboutRef = useRef(null);
+  
+  const handleDiveDown = () => {
+    window.scrollTo({
+      top: window.innerHeight * 2,
+      behavior: 'smooth'
+    })
+  }
 
   useEffect(() => {
     if (inView) {
@@ -40,7 +47,7 @@ const Profile = () => {
               rounded-full
               hover:bg-background hover:text-foreground
               transition duration-300 ease-in-out
-            " size={'lg'}>My Portfolio</Button>
+            " size={'lg'} onClick={handleDiveDown}>My Portfolio</Button>
           </div>
       </div>
       <Divider/>
