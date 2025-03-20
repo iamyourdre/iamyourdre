@@ -70,7 +70,7 @@ const Hero = () => {
 
   return (
     <div ref={vantaRef} className='fixed min-h-screen w-full overflow-x-hidden' style={{ opacity }}>
-      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background/60 md:bg-transparent ">
+      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background">
 
         <div className='md:col-span-1 hidden md:flex justify-left items-center text-sm text-muted-foreground font-semibold'>
           <div className="flex gap-6">
@@ -90,8 +90,8 @@ const Hero = () => {
         <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18 lg:gap-20'>
           <div className="flex flex-col gap-6 pt-36 md:pt-0">
             <h1 className='h1-dre font-black'>
-              Hello, <span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'>World!</span><br />
-              I'm Adrian Sutansaty.
+              BEHIND.<span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'>CODE</span><br />
+              &CREATIVITY
             </h1>
             <div className="flex gap-2">
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
@@ -101,7 +101,7 @@ const Hero = () => {
           <div className="h3-dre flex flex-col gap-8">
             <div className="grid lg:grid-cols-3">
               <div className="text-muted-foreground col-span-2 text-justify">
-                A recent graduate of <span className='text-foreground'>Informatics Engineering</span> with strong passion in <span className='text-foreground'>Web Development</span>. Having strong experience on <span className='text-foreground'>Web3, and crypto culture</span>. Able to work in a team, lead projects, communicate, and think creatively in doing something. Let's connect!
+                Hi! Welcome to my <span className='text-foreground'>Portfolio</span>. I am the one who having strong passion in <span className='text-foreground'>Web Development</span>. In this page, let me presenting <span className='text-foreground'>my projects</span>, <span className='text-foreground'>skills</span>, and <span className='text-foreground'>experiences</span>. I'll be happy to work with you. So, let's dive down and get to know each other!
               </div>
             </div>
             <div className="flex gap-4 col-span-1 justify-start items-start">

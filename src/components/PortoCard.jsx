@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Badge } from "@/components/ui/badge"
 import { Button } from './ui/button'
 
-const PortoCard = ({thumbnail, title, tag, to}) => {
+const PortoCard = ({thumbnail, title, tag, to, className}) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
 
@@ -22,7 +22,7 @@ const PortoCard = ({thumbnail, title, tag, to}) => {
   };
 
   return (
-    <Link to={to} className="p-4">
+    <Link to={to} className="p-4 md:border-r border-b border-muted even:border-r-0 last:border-b-0 md:nth-last-[2]:border-b-0">
       <div 
         className="flex relative"
         onMouseMove={handleMouseMove}

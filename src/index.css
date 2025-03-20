@@ -144,12 +144,19 @@
     @apply bg-indigo-500;
   }
   .h1-dre {
-    @apply text-5xl md:text-6xl lg:text-7xl ;
+    @apply text-4xl md:text-6xl lg:text-7xl uppercase;
+    font-family: 'MonumentExtended', sans-serif;
+  }
+  .h1 {
+    @apply text-4xl md:text-6xl;
   }
   .h2-dre {
     @apply text-lg;
   }
   .h3-dre {
     @apply text-sm ;
+  }
+  .markdown > * {
+    all: revert;
   }
 }
