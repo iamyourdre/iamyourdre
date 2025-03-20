@@ -6,7 +6,7 @@
 
 ###
 
-- [VISIT MY PORTFOLIO](https://iamyourdre.vercel.app)
+[**VISIT MY PORTFOLIO**](https://iamyourdre.vercel.app)
 
 ###
 
