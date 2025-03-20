@@ -10,20 +10,20 @@ const Hero = () => {
   const [opacity, setOpacity] = useState(1)
 
   useEffect(() => {
-    const vantaEffect = HALO({
-      el: vantaRef.current,
-      mouseControls: true,
-      // touchControls: true,
-      // gyroControls: true,
-      minHeight: 200,
-      minWidth: 200,
-      amplitudeFactor: 8,
-      shininess: 50,
-      xOffset: 0.5,
-      yOffset: 0.5,
-      size: 2,
-      THREE: THREE
-    })
+    // const vantaEffect = HALO({
+    //   el: vantaRef.current,
+    //   mouseControls: true,
+    //   // touchControls: true,
+    //   // gyroControls: true,
+    //   minHeight: 200,
+    //   minWidth: 200,
+    //   amplitudeFactor: 8,
+    //   shininess: 50,
+    //   xOffset: 0.5,
+    //   yOffset: 0.5,
+    //   size: 2,
+    //   THREE: THREE
+    // })
   
     const handleScroll = () => {
       const scrollTop = window.scrollY
@@ -39,7 +39,7 @@ const Hero = () => {
     window.addEventListener('scroll', handleScroll)
   
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
+      // if (vantaEffect) vantaEffect.destroy()
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
