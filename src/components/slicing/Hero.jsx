@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Asterisk, Linkedin, Mail } from 'lucide-react'
+import { ArrowUpLeft, Asterisk, Linkedin, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import * as THREE from 'three'
@@ -17,38 +17,30 @@ const Hero = () => {
   const buttonRef = useRef(null)
   const aboutRef = useRef(null)
   const [opacity, setOpacity] = useState(1)
+  const [time, setTime] = useState(new Date().toLocaleTimeString('en-GB', { timeZone: 'Asia/Jakarta', hour: '2-digit', minute: '2-digit' }))
 
   useEffect(() => {
-    // const vantaEffect = HALO({
-    //   el: vantaRef.current,
-    //   mouseControls: true,
-    //   // touchControls: true,
-    //   // gyroControls: true,
-    //   minHeight: 200,
-    //   minWidth: 200,
-    //   amplitudeFactor: 8,
-    //   shininess: 50,
-    //   xOffset: 0.5,
-    //   yOffset: 0.5,
-    //   size: 2,
-    //   THREE: THREE
-    // })
-  
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString('en-GB', { timeZone: 'Asia/Jakarta', hour: '2-digit', minute: '2-digit' }))
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       const maxScroll = window.innerHeight
       const newOpacity = Math.max(1 - scrollTop / maxScroll, 0)
       setOpacity(newOpacity)
-  
-      // Calculate the new transform value
+
       const translateY = Math.min(scrollTop / 2, maxScroll / 2)
       vantaRef.current.style.transform = `translateY(-${translateY}px)`
     }
-  
+
     window.addEventListener('scroll', handleScroll)
-  
+
     return () => {
-      // if (vantaEffect) vantaEffect.destroy()
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -94,7 +86,10 @@ const Hero = () => {
   ]
 
   return (
-    <div ref={vantaRef} className='fixed min-h-screen w-full overflow-x-hidden' style={{ opacity }}>
+    <div ref={vantaRef} style={{ opacity }} className='fixed min-h-screen w-full overflow-hidden'>
+      <div className='font-[1000] text-[15rem] md:text-[30rem] absolute w-max z-0 pointer-events-none opacity-5 justify-center items-center flex transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
+        <span className='opacity-50'>{time}</span>
+      </div>
       <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background">
 
         <div className='md:col-span-1 hidden md:flex justify-left items-center text-sm text-muted-foreground font-semibold'>
@@ -115,11 +110,9 @@ const Hero = () => {
         <div className='flex flex-1 col-span-3 flex-col md:box justify-center md:justify-end gap-14 md:gap-18 lg:gap-20'>
           <div className="flex flex-col gap-6 pt-36 md:pt-0">
             <h1 className='h1-dre font-black'>
-              {/* <p ref={h1_1} className='flex'>Behind <Asterisk /><span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'></span> Code</p> */}
               <p ref={h1_1} className='flex'>Behind&nbsp;<span className='bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-fuchsia-400'>{'{'}</span>
               <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed out once, initially
                   '',
                   1000,
                   'Code',

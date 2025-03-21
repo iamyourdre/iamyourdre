@@ -58,7 +58,7 @@ const Portfolio = () => {
             <PortoCard thumbnail={chatapp} title='Chat App' tag={['Web Development']} to='/portfolio/chatapp'/>
             <Link to={'https://github.com/iamyourdre'} className="p-2 md:border-r border-b border-muted even:border-r-0 last:border-b-0 md:nth-last-[2]:border-b-0">
               <div className="h-full flex justify-center items-center gap-2">
-                <Button variant='outline' className='w-full h-full cursor-pointer' ><Github/><Badge className='bg-foreground'>github.com/iamyourdre</Badge></Button>
+                <Button variant='outline' className='w-full h-full' ><Github/><Badge className='bg-foreground'>github.com/iamyourdre</Badge></Button>
               </div>
             </Link>
           </div>

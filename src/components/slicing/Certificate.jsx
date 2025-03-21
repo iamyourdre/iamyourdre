@@ -38,6 +38,7 @@ const certificate = [
 const Certificate = () => {
   const title = useRef(null)
   const subtitle = useRef(null)
+  const certificatesTitle = useRef(null)
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.6, 
@@ -50,8 +51,23 @@ const Certificate = () => {
     }
   }, [inView]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      gsap.to(certificatesTitle.current, { x: -scrollY * 0.2 });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='py-20 bg-foreground text-background'>
+    <div className='py-20 bg-foreground text-background relative overflow-hidden'>
+      <h1 ref={certificatesTitle} className='font-[1000] text-[15rem] md:text-[20rem] -top-1 left-4 md:-top-16 lg:-top-12 md:left-8 absolute w-max z-0 pointer-events-none opacity-5'>
+        CERTIFICATES.
+      </h1>
       <div className="flex flex-col-reverse md:grid md:grid-cols-6 md:gap-10">
         <div className='hidden md:col-span-1 md:flex relative'>
         </div>

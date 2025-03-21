@@ -161,4 +161,26 @@
     mix-blend-mode: difference;
     color: white;
   }
+  .animated-link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  }
+  .animated-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    display: block;
+    margin-top: -2px;
+    left: 0;
+    background: #FFD700; /* Warna kuning */
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .animated-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
 }

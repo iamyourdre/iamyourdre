@@ -16,7 +16,7 @@ import { Button } from '@/components/ui/button'
 
 const navLinks = [
   {
-    title: 'About Me',
+    title: 'Me',
     url: 'profile',
   },
   {
@@ -50,14 +50,14 @@ const Navbar = ({ref}) => {
       <div className="hidden flex-1 md:flex pl-5 gap-3 justify-center md:col-span-2">
         {navLinks.map((link, index) => (
           link.url.startsWith('/') ? (
-            <RouterLink key={index} to={link.url} className='text-sm font-medium mx-3'>{link.title}</RouterLink>
+            <RouterLink key={index} to={link.url} className='text-sm font-medium mx-3 cursor-pointer'>{link.title}</RouterLink>
           ) : (
-            <Link key={index} to={link.url} smooth={true} duration={500} className='text-sm font-medium mx-3'>{link.title}</Link>
+            <Link key={index} to={link.url} smooth={true} duration={500} className='text-sm font-medium mx-3 cursor-pointer'>{link.title}</Link>
           )
         ))}
       </div>
       <div className="flex-1 flex md:flex-none justify-end lg:col-span-1">
-        <RouterLink to="https://www.linkedin.com/in/iamyourdre/">
+        <RouterLink to="https://www.linkedin.com/in/iamyourdre/" target="_blank">
           <Button className="mr-2" variant="ghost"><Linkedin/> LinkedIn</Button>
         </RouterLink>
       </div>
@@ -81,11 +81,11 @@ export function Dropdown() {
           {navLinks.map((link, index) => (
             link.url.startsWith('/') ? (
               <RouterLink key={index} to={link.url}>
-                <DropdownMenuItem className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+                <DropdownMenuItem className='text-sm font-medium py-2 cursor-pointer'>{link.title}</DropdownMenuItem>
               </RouterLink>
             ) : (
               <Link key={index} to={link.url} smooth={true} duration={500}>
-                <DropdownMenuItem className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+                <DropdownMenuItem className='text-sm font-medium py-2 cursor-pointer'>{link.title}</DropdownMenuItem>
               </Link>
             )
           ))}

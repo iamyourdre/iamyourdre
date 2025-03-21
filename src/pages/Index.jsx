@@ -12,6 +12,7 @@ import Portfolio from '@/components/slicing/Portfolio';
 import { Progress } from "@/components/ui/progress";
 import Experience from '@/components/slicing/Experience';
 import Certificate from '@/components/slicing/Certificate';
+import Footer from '@/components/slicing/Footer';
 
 const Index = () => {
   const { ref, inView } = useInView({
@@ -103,6 +104,7 @@ const Index = () => {
           <Element name="certificate">
             <Certificate />
           </Element>
+          <Footer />
         </motion.div>
       </div>
     </ReactLenis>
