@@ -80,9 +80,13 @@ export function Dropdown() {
         <DropdownMenuGroup>
           {navLinks.map((link, index) => (
             link.url.startsWith('/') ? (
-              <DropdownMenuItem key={index} as={RouterLink} to={link.url} className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+              <RouterLink key={index} to={link.url}>
+                <DropdownMenuItem className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+              </RouterLink>
             ) : (
-              <DropdownMenuItem key={index} as={Link} to={link.url} smooth={true} duration={500} className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+              <Link key={index} to={link.url} smooth={true} duration={500}>
+                <DropdownMenuItem className='text-sm font-medium py-2'>{link.title}</DropdownMenuItem>
+              </Link>
             )
           ))}
         </DropdownMenuGroup>
