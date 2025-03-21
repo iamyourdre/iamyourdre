@@ -8,7 +8,7 @@ import Divider from '../Divider';
 const Profile = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.4, 
+    threshold: 0.5, 
   });
   const aboutRef = useRef(null);
   
@@ -28,7 +28,7 @@ const Profile = () => {
   }, [inView]);
 
   return (
-    <div className='h-full w-full overflow-hidden bg-background box grid lg:grid-cols-2 gap-5' ref={ref} id='about'>
+    <div className='h-full w-full overflow-hidden bg-transparent box grid lg:grid-cols-2 gap-5 py-20' ref={ref} id='about'>
       <div 
         className="rounded-xl min-h-[30rem] w-full bg-cover bg-center" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529524987368-af489318987c?q=80&w=2082&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
@@ -50,7 +50,6 @@ const Profile = () => {
             " size={'lg'} onClick={handleDiveDown}>My Portfolio</Button>
           </div>
       </div>
-      <Divider/>
     </div>
   )
 }

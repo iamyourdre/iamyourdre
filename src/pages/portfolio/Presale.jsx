@@ -2,13 +2,6 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Github } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import preview from '@/assets/portofolio/presale/preview.png'
 import Divider from '@/components/Divider'
 import { Link } from 'react-router-dom'
@@ -70,7 +63,7 @@ The frontend is built using React and provides a user interface for participatin
         <div className="col-span-1">
           <div className="">
             <Link className='hidden lg:flex absolute left-0 top-1/2 transform -translate-x-1/3 z-10' to={details.link}>
-              <Button className='rounded-none rotate-90' size={'xl'}><Github/>Github</Button>
+              <Button className='rounded-none rotate-90' size={'xl'}><Github/>GitHub</Button>
             </Link>
           </div>
         </div>
@@ -84,7 +77,7 @@ The frontend is built using React and provides a user interface for participatin
               <Markdown>{details.description}</Markdown>
             </div>
             <Link to={details.link} className='flex'>
-              <Button className='mt-4 flex-1' size='lg'><Github/> Check on Github</Button>
+              <Button className='mt-4 flex-1' size='lg'><Github/> Check on GitHub</Button>
             </Link>
             <Divider/>
             <div className="flex flex-col gap-2">

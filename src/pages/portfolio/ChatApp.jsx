@@ -2,6 +2,11 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Github } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
+import _1 from '@/assets/portofolio/chatapp/1.png'
+import _2 from '@/assets/portofolio/chatapp/2.png'
+import Divider from '@/components/Divider'
+import { Link } from 'react-router-dom'
+import Markdown from 'react-markdown'
 import {
   Carousel,
   CarouselContent,
@@ -9,32 +14,34 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import _1 from '@/assets/portofolio/crowdfunding/1.png'
-import _2 from '@/assets/portofolio/crowdfunding/2.png'
-import Divider from '@/components/Divider'
-import { Link } from 'react-router-dom'
-import Markdown from 'react-markdown'
 
 
-const Crowdfunding = () => {
+const ChatApp = () => {
   const details = {
-    title: 'Web3 Crowdfunding',
+    title: 'React Chat App',
     description: `
-A dApps crowdfunding platform built on the Ethereum blockchain. It allows users to create, manage, and contribute to crowdfunding campaigns using smart contracts.
+The React Chat App is a real-time messaging application that allows users to send and receive messages instantly. It features a secure login and registration system, ensuring user authentication and privacy.
 
-## Demo
 
-The application is deployed on Vercel. You can access the demo [here](https://web3-crowdfunding-dre.vercel.app). Btw, please make sure you are using Testnet Sepolia Network.
+## Project Features
 
-## Features
-- **Create Campaign**: Users can create a new campaign by providing a title, description, and minimum contribution.
-- **Contribute to Campaign**: Users can contribute to a campaign by providing a contribution amount.
-- **Track Campaign**: Users can view the details of a campaign, including the total amount raised, the number of contributors, and the manager's address.
-- **Request Withdrawal**: Campaign managers can create a withdrawal request to transfer funds from the campaign to a specific address.
+- **Real-time Messaging**: Send and receive messages in real-time.
+- **User Authentication**: Secure login and registration system.
+
+## Technologies Used
+
+- **MongoDB**: NoSQL database for storing chat data.
+- **Express.js**: Web framework for Node.js.
+- **React**: Frontend library for building user interfaces.
+- **Node.js**: Backend runtime environment.
+- **Socket.io**: Real-time communication support.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **JWT**: JSON Web Tokens for secure authentication.
     `,
-    highlight: ['Web3', 'dApps', 'React.js', 'Tailwind CSS', 'Ethers.js', 'Web3.js', 'Solidity', 'Thirdweb', 'Vercel'],
     images: [_1, _2],
-    link: 'https://github.com/iamyourdre/Web3-Crowdfunding-App'
+    frontend: ['React.js', 'Socket.IO', 'Tailwind CSS'],
+    backend: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Socket.io', 'JWT'],
+    link: 'https://github.com/iamyourdre/react-chatapp'
   }
   return (
     <div className='mt-16'>
@@ -52,7 +59,7 @@ The application is deployed on Vercel. You can access the demo [here](https://we
               <CarouselContent>
                 {details.images.map((image, index) => (
                   <CarouselItem key={index}>
-                    <img src={image} alt="tweetify" className="w-full border border-muted rounded-2xl" />
+                    <img src={image} alt="tweetify" className="w-full" />
                   </CarouselItem>
                 ))}
               </CarouselContent>
@@ -75,7 +82,14 @@ The application is deployed on Vercel. You can access the demo [here](https://we
             <Divider/>
             <div className="flex flex-col gap-2">
               <div className="flex flex-wrap gap-2">
-                {details.highlight.map((item, index) => (
+                <Badge className='border-muted rounded-full flex-none'>Frontend</Badge>
+                {details.frontend.map((item, index) => (
+                  <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <Badge className='border-muted rounded-full'>Backend</Badge>
+                {details.backend.map((item, index) => (
                   <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
                 ))}
               </div>
@@ -88,4 +102,4 @@ The application is deployed on Vercel. You can access the demo [here](https://we
     </div>
   )
 }
-export default Crowdfunding
+export default ChatApp

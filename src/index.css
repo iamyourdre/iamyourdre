@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap"');
 @font-face {
   font-family: 'MonumentExtended';
   src: url('./assets/MonumentExtended-Ultrabold.otf') format('opentype');
@@ -144,11 +145,8 @@
     @apply bg-indigo-500;
   }
   .h1-dre {
-    @apply text-4xl md:text-6xl lg:text-7xl uppercase;
-    font-family: 'MonumentExtended', sans-serif;
-  }
-  .h1 {
-    @apply text-4xl md:text-6xl;
+    @apply text-5xl md:text-6xl lg:text-7xl;
+    font-family: 'DM Sans', sans-serif;
   }
   .h2-dre {
     @apply text-lg;
@@ -158,5 +156,9 @@
   }
   .markdown > * {
     all: revert;
+  }
+  .invert-text {
+    mix-blend-mode: difference;
+    color: white;
   }
 }
