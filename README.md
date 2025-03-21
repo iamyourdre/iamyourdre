@@ -6,8 +6,7 @@
 
 ###
 
-- [Contact Me](https://linktr.ee/iamyourdre)
-- [My Curriculum Vitae](https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing)
+[**VISIT MY PORTFOLIO**](https://iamyourdre.vercel.app)
 
 ###
 
