@@ -130,13 +130,15 @@ const Hero = () => {
             </h1>
             <div className="flex gap-2" ref={buttonRef}>
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
-              <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>Read My CV</Button>
+              <Link to='https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing' target='_blank'>
+                <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>Read My CV</Button>
+              </Link>
             </div>
           </div>
           <div className="h3-dre flex flex-col gap-8">
             <div className="grid lg:grid-cols-3">
               <div className="text-muted-foreground col-span-2 text-justify" ref={aboutRef}>
-                Hi! Welcome to my <span className='text-foreground'>Portfolio</span>. I am the one who having strong passion in <span className='text-foreground'>Web Development</span>. In this page, let me presenting <span className='text-foreground'>my projects</span>, <span className='text-foreground'>skills</span>, and <span className='text-foreground'>experiences</span>. I'll be happy to work with you. So, let's dive down and get to know each other!
+                Hi! Welcome to my <span className='text-foreground'>Portfolio</span>. My name is Adrian and i have strong passion in <span className='text-foreground'>Web Development</span>. In this page, let me presenting <span className='text-foreground'>my projects</span>, <span className='text-foreground'>skills</span>, and <span className='text-foreground'>experiences</span>. I'll be happy to work with you. So, let's dive down and get to know each other!
               </div>
             </div>
             <div className="flex gap-4 col-span-1 justify-start items-start">
