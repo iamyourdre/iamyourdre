@@ -15,7 +15,7 @@ const Footer = () => {
         <span className='box my-0 py-0'>YOU!</span>
         </div>
       </div>
-      <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4 text-xs tracking-wide justify-end items-end">
+      <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4 text-xs tracking-wide justify-start md:justify-end md:items-end">
         <div className="col-span-1">
           ©2025 ADRIAN<br />ALL RIGHTS RESERVED.
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           <Link to='mailto:adriansutansaty260403@gmail.com' className='animated-link'>EMAIL</Link>,&nbsp;
           <Link to='https://www.instagram.com/iamyourdre/' className='animated-link'>INSTAGRAM</Link>
         </div>
-        <div className="col-span-2 md:col-span-1 flex justify-end items-end">
+        <div className="flex col-span-2 md:col-span-1 justify-end items-end">
           <button onClick={handleTop}>
             <ArrowUpLeft size={50}/>
           </button>

@@ -82,7 +82,7 @@ const Certificate = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col box md:box-m gap-6 font-light text-xl">
+      <div className="flex flex-col box md:box-m gap-6 font-light lg:text-xl">
         {certificate.map((exp, idx) => (
           <>
             <div className="border border-muted-foreground"></div>
