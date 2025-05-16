@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { gsap } from 'gsap';
 import { Button } from '../ui/button';
 import Divider from '../Divider';
+import me from '../../assets/me/3x4 Adrian Sutansaty WBG.png'
 
 const Profile = () => {
   const { ref, inView } = useInView({
@@ -30,8 +31,10 @@ const Profile = () => {
   return (
     <div className='h-full w-full overflow-hidden bg-transparent box grid lg:grid-cols-2 gap-5 py-20' id='about'>
       <div
-        className="rounded-xl min-h-[30rem] w-full bg-cover bg-center" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529524987368-af489318987c?q=80&w=2082&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
+        className="rounded-xl aspect-1/1 w-full bg-cover bg-center" 
+        style={{ backgroundImage:
+          `url(${me})`
+         }}
       />
       <div className="flex flex-col rounded-xl px-7 py-9 md:pr-18 bg-foreground text-background text-2xl md:text-3xl leading-tight" ref={ref}>
         <div className="" ref={aboutRef} >

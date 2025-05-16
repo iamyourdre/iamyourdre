@@ -122,20 +122,20 @@ Building this Twitter wannabe app was an incredible learning experience. I gaine
             <Link to={details.link} className='flex'>
               <Button className='mt-4 flex-1' size='lg'><Github/> Check on GitHub</Button>
             </Link>
-          </div>
-          <Divider/>
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-wrap gap-2">
-              <Badge className='border-muted rounded-full flex-none'>Frontend</Badge>
-              {details.frontend.map((item, index) => (
-                <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <Badge className='border-muted rounded-full'>Backend</Badge>
-              {details.backend.map((item, index) => (
-                <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
-              ))}
+            <Divider/>
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-wrap gap-2">
+                <Badge className='border-muted rounded-full flex-none'>Frontend</Badge>
+                {details.frontend.map((item, index) => (
+                  <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <Badge className='border-muted rounded-full'>Backend</Badge>
+                {details.backend.map((item, index) => (
+                  <Badge key={index} variant="outline" className='border-muted text-muted-foreground rounded-full'>{item}</Badge>
+                ))}
+              </div>
             </div>
           </div>
         </div>

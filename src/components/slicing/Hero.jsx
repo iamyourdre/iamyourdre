@@ -86,11 +86,20 @@ const Hero = () => {
   ]
 
   return (
-    <div ref={vantaRef} style={{ opacity }} className='fixed min-h-screen w-full overflow-hidden'>
+    <div
+      ref={vantaRef}
+      className='fixed min-h-screen w-full overflow-hidden'
+      style={{
+        opacity: opacity,
+        backgroundImage: `url('https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
       <div className='font-[1000] text-[15rem] md:text-[30rem] absolute w-max z-0 pointer-events-none opacity-5 justify-center items-center flex transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
-        <span className='opacity-50'>{time}</span>
+        <span className='opacity-70'>{time}</span>
       </div>
-      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box bg-background">
+      <div className="min-h-screen flex md:0 flex-col-reverse md:grid md:grid-cols-4 md:gap-10 box">
 
         <div className='md:col-span-1 hidden md:flex justify-left items-center text-sm text-muted-foreground font-semibold'>
           <div className="flex gap-6">
