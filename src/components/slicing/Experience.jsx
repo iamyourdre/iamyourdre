@@ -36,6 +36,17 @@ const experience = [
     ],
     link: 'https://drive.google.com/drive/folders/1a-8PwecEnPz7AiCE26qxSX4rL-IuF_ht'
   },
+  {
+    title: 'Technical Support',
+    company: 'Hirehub – by Google, GoTo, and Traveloka',
+    date: '2024-2025',
+    description: [
+      'Work with the developer team to patch bugs, perform frontend & backend checks, and submit daily technical reports.',
+      'Provide technical support to clients in using the HireHub recruitment platform.',
+      'Provide brief technical training to users on application features.'
+    ],
+    link: 'https://www.linkedin.com/company/hirehub-indonesia'
+  },
 ]
 
 const Experience = () => {
