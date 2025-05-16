@@ -41,7 +41,7 @@ const Profile = () => {
           <p>Hi! I'm Adrian Sutansaty,</p>
           <p>a recent graduate of Informatics Engineering, Sriwijaya University.</p>
           <span>
-            I have experience in fullstack dev using modern tech stack such as React.js, Node.js, and Laravel. I also have experience developing Web3 dApps or DeFi based on Ethereum Blockchain.
+            I am a JavaScript fullstack developer specializing in Next.js and modern web technologies. I also have experience building Web3 dApps and DeFi solutions on the Ethereum blockchain.
           </span>
         </div>
           <div className="flex items-end h-full mt-30">
