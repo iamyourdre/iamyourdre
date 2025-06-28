@@ -139,8 +139,8 @@ const Hero = () => {
             </h1>
             <div className="flex gap-2" ref={buttonRef}>
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
-              <Link to='https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing' target='_blank'>
-                <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>Read My CV</Button>
+              <Link to={contact[0].link} target='_blank'>
+                <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'><Linkedin />LinkedIn</Button>
               </Link>
             </div>
           </div>

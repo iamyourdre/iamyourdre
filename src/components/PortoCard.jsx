@@ -22,7 +22,7 @@ const PortoCard = ({thumbnail, title, tag, to, className}) => {
   };
 
   return (
-    <Link to={to} className="p-4 md:border-r border-b border-muted even:border-r-0 last:border-b-0 md:nth-last-[2]:border-b-0">
+    <Link to={to} target='_blank' className="p-4 md:border-r border-b border-muted even:border-r-0 last:border-b-0 md:nth-last-[2]:border-b-0">
       <div 
         className="flex relative"
         onMouseMove={handleMouseMove}

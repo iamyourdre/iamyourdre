@@ -19,39 +19,37 @@ import Markdown from 'react-markdown'
 
 const SRJK = () => {
   const details = {
-    title: 'SRJK',
+    title: 'SRJK (Sistem Rekomendasi Jurusan Kuliah)',
     description: `
-# Sistem Rekomendasi Jurusan Kuliah Siswa SMA Berdasarkan Nilai Rapor dengan Algoritma Naive Bayes
+# College Major Recommendation System for High School Students Based on Report Card Grades Using the Naive Bayes Algorithm
 
-Sistem ini dikembangkan sebagai bagian dari penelitian yang bertujuan untuk membantu siswa dalam memilih jurusan yang sesuai dengan kemampuan akademik mereka, sehingga meningkatkan peluang diterima di perguruan tinggi melalui jalur seleksi tanpa tes.
-
+This system was developed as part of a research project aimed at helping students choose majors that match their academic abilities, thereby increasing their chances of being accepted into universities through non-test selection pathways.
 
 ![Preview](https://github.com/iamyourdre/sistem-rekomendasi-jurusan-kuliah/blob/main/preview.png?raw=true)
 
-## 🏛 Latar Belakang
-Banyak siswa SMA mengalami kesulitan dalam memilih jurusan kuliah yang sesuai dengan minat dan kemampuannya, yang berdampak pada tingkat kelulusan yang rendah dalam seleksi nasional masuk perguruan tinggi (PTN). Oleh karena itu, sistem ini dirancang untuk menganalisis pola nilai rapor siswa dan memberikan rekomendasi jurusan berdasarkan data historis siswa yang telah berhasil diterima di PTN.
+## 🏛 Background
+Many high school students struggle to choose a college major that suits their interests and abilities, which impacts the low graduation rates in national university entrance selection (PTN). Therefore, this system is designed to analyze students' report card grade patterns and provide major recommendations based on historical data of students who have successfully been accepted into PTN.
 
-## 🔍 Metode
-- **Naive Bayes Classifier**: Digunakan untuk mengklasifikasikan jurusan dengan probabilitas tertinggi berdasarkan pola nilai rapor siswa.
-- **Euclidean Distance**: Digunakan untuk menemukan jurusan dengan pola nilai yang paling mirip dengan siswa yang telah berhasil diterima sebelumnya.
-- **Leave-One-Out Cross Validation (LOOCV)**: Digunakan untuk menguji keakuratan model dengan dataset yang terbatas.
-- **Precision Calculation**: Digunakan untuk mengevaluasi tingkat keberhasilan rekomendasi.
+## 🔍 Methods
+- **Naive Bayes Classifier**: Used to classify the major with the highest probability based on the student's report card grade patterns.
+- **Euclidean Distance**: Used to find the major with the most similar grade pattern to students who have previously been accepted.
+- **Leave-One-Out Cross Validation (LOOCV)**: Used to test the model's accuracy with a limited dataset.
+- **Precision Calculation**: Used to evaluate the success rate of the recommendations.
 
-## ⚙️ Teknologi yang Digunakan
-- **Backend**: Node.js dengan Express.js
-- **Frontend**: React.js dengan Tailwind CSS
+## ⚙️ Technologies Used
+- **Backend**: Node.js with Express.js
+- **Frontend**: React.js with Tailwind CSS
 - **Database**: MySQL
-- **Authentication**: NextAuth.js dengan JWT dan CSRF Token
+- **Authentication**: NextAuth.js with JWT and CSRF Token
 
-## 📌 Fitur Utama
-- **Pelatihan Model**: Sistem dapat melatih model Naive Bayes dengan dataset nilai rapor siswa yang telah berhasil diterima di PTN.
-- **Pengujian Model**: Sistem dapat menguji keakuratan model dengan dataset yang terbatas menggunakan metode LOOCV.
-- **Input Nilai Rapor**: Siswa dapat memasukkan nilai rapor mereka untuk mendapatkan rekomendasi jurusan.
-- **Rekomendasi Jurusan**: Siswa dapat melihat rekomendasi jurusan berdasarkan nilai rapor mereka.
+## 📌 Main Features
+- **Model Training**: The system can train the Naive Bayes model with a dataset of report card grades from students who have been accepted into PTN.
+- **Model Testing**: The system can test the model's accuracy with a limited dataset using the LOOCV method.
+- **Report Card Input**: Students can input their report card grades to get major recommendations.
+- **Major Recommendations**: Students can view recommended majors based on their report card grades.
 
-
-## 📖 Referensi
-Penelitian ini merupakan bagian dari skripsi saya yang berjudul **"Sistem Rekomendasi Jurusan Kuliah Siswa SMA Berdasarkan Nilai Rapor dengan Algoritma Naive Bayes"**, yang dapat diakses melalui [repository Universitas Sriwijaya](https://repository.unsri.ac.id/156310/3/RAMA_55201_09021382025164_0009019002_0021128905_01_front_ref.pdf).
+## 📖 Reference
+This research is part of my thesis titled **"Sistem Rekomendasi Jurusan Kuliah Siswa SMA Berdasarkan Nilai Rapor dengan Algoritma Naive Bayes"**, which can be accessed through the [Sriwijaya University repository](https://repository.unsri.ac.id/156310/3/RAMA_55201_09021382025164_0009019002_0021128905_01_front_ref.pdf).
     `,
     highlight: ['Machine Learning', 'Data Mining', 'Web Development'],
     frontend: ['React.js', 'React Redux', 'React Router', 'Tailwind CSS', 'Axios'],

@@ -19,25 +19,25 @@ import {
 
 const Liqee = () => {
   const details = {
-    title: 'Liqee | Layanan Sosial Media',
+    title: 'Liqee | Social Media Services',
     description: `
-Liqee adalah platform inovatif yang menyediakan layanan pembelian Likes dan Followers secara instan dan mudah. Pengguna dapat memilih layanan yang diinginkan, melakukan pembayaran melalui QRIS, dan pesanan akan langsung diproses tanpa perlu registrasi atau mengisi saldo terlebih dahulu.
+Liqee is an innovative platform that provides instant and easy services for purchasing Likes and Followers. Users can select the desired service, make payments via QRIS, and orders will be processed immediately without the need for registration or topping up a balance first.
 
-## Fitur Utama
+## Main Features
 
-- **Tanpa Registrasi**: Pengguna tidak perlu membuat akun atau login untuk melakukan pemesanan.
-- **Pembayaran Instan**: Mendukung pembayaran langsung melalui QRIS.
-- **Proses Cepat & Otomatis**: Pesanan diproses secara otomatis dan instan setelah pembayaran diterima.
-- **Antarmuka Sederhana**: Desain user-friendly yang memudahkan pengguna dalam memilih layanan.
+- **No Registration**: Users do not need to create an account or log in to place an order.
+- **Instant Payment**: Supports direct payment via QRIS.
+- **Fast & Automatic Processing**: Orders are processed automatically and instantly after payment is received.
+- **Simple Interface**: User-friendly design makes it easy for users to select services.
 
-## Teknologi yang Digunakan
+## Technologies Used
 
-- **Next.js**: Framework React untuk pengembangan aplikasi web modern.
-- **Tailwind CSS**: Framework CSS utility-first untuk styling responsif.
-- **Zustand**: State management sederhana dan efisien untuk React.
-- **Axios**: HTTP client untuk komunikasi dengan backend.
-- **MongoDB**: Database NoSQL untuk penyimpanan data layanan dan transaksi.
-- **JWT**: JSON Web Token untuk otentikasi dan keamanan API.
+- **Next.js**: React framework for modern web application development.
+- **Tailwind CSS**: Utility-first CSS framework for responsive styling.
+- **Zustand**: Simple and efficient state management for React.
+- **Axios**: HTTP client for backend communication.
+- **MongoDB**: NoSQL database for storing services and transaction data.
+- **JWT**: JSON Web Token for API authentication and security.
     `,
     images: [_1, _2, _3],
     frontend: ['Next.js', 'Tailwind CSS', 'Zustand', 'Axios'],
@@ -50,7 +50,7 @@ Liqee adalah platform inovatif yang menyediakan layanan pembelian Likes dan Foll
         <div className="col-span-1">
           <div className="">
             <Link className='hidden lg:flex absolute left-0 top-1/2 transform -translate-x-1/3 z-10' to={details.link}>
-              <Button className='rounded-none rotate-90' size={'xl'}><Github/>GitHub</Button>
+              <Button className='rounded-none rotate-90' size={'xl'}><ArrowUpRight/>Visit Website</Button>
             </Link>
           </div>
         </div>
@@ -78,7 +78,7 @@ Liqee adalah platform inovatif yang menyediakan layanan pembelian Likes dan Foll
               <Markdown>{details.description}</Markdown>
             </div>
             <Link to={details.link} className='flex'>
-              <Button className='mt-4 flex-1' size='lg'><ArrowUpRight/> Visit Website</Button>
+              <Button className='mt-4 flex-1' size='lg'><ArrowUpRight/>Visit Website</Button>
             </Link>
             <Divider/>
             <div className="flex flex-col gap-2">

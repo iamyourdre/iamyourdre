@@ -23,27 +23,27 @@ const PTBA = () => {
   const details = {
     title: 'PTBA Asset Management',
     description: `
-### APLIKASI PENDATAAN SERIAL NUMBER DAN ASSET TAG BARANG PADA PT. BUKIT ASAM BERBASIS APLIKASI ANDROID
+### ANDROID-BASED APPLICATION FOR RECORDING SERIAL NUMBERS AND ASSET TAGS AT PT. BUKIT ASAM
 
-Membuat sebuah aplikasi pendataan serial number dan asset tag barang di PT. Bukit Asam berbasis aplikasi android guna memudahkan para pegawai terutama pada bagian gudang untuk menginput dan mendata barang yang ada di PT. Bukit Asam Tanjung Enim.
+Developed an Android-based application for recording serial numbers and asset tags at PT. Bukit Asam to facilitate employees, especially in the warehouse department, in inputting and recording items at PT. Bukit Asam Tanjung Enim.
 
-Hasilnya, aplikasi ini berhasil meningkatkan efisiensi pencatatan aset hingga 90%, mengurangi waktu proses dari 1 jam menjadi 5 menit.
+As a result, this application successfully increased asset recording efficiency by up to 90%, reducing the process time from 1 hour to just 5 minutes.
 
-## ANGGOTA KERJA PRAKTIK :
+## INTERNSHIP TEAM MEMBERS:
 
 Adrian Sutansaty ( Fullstack Developer )
 
 Andelle Gianzra Basae ( Frontend Developer )
 
 Annisa Arrayyan ( Software Designer )
-## FITUR UTAMA
+## MAIN FEATURES
 
-- **Pendataan Aset**: Pengguna dapat menambahkan, mengedit, dan menghapus aset.
-- **OCR Scanner**: Pengguna dapat menggunakan OCR Scanner untuk memindai label Asset Tag dan Serial Number.
-- **Pencarian Aset**: Pengguna dapat mencari aset berdasarkan nama, kategori, dan lokasi.
-- **Pengurutan Aset**: Pengguna dapat mengurutkan daftar aset berdasarkan nama, kategori, dan lokasi.
-- **Filter Berdasarkan Periode**: Pengguna dapat memfilter daftar aset berdasarkan periode.
-- **Ekspor Semua Aset ke CSV**: Pengguna dapat mengekspor semua aset ke dalam format CSV.
+- **Asset Data Management**: Users can add, edit, and delete assets.
+- **OCR Scanner**: Users can use the OCR Scanner to scan Asset Tag and Serial Number labels.
+- **Asset Search**: Users can search for assets by name, category, and location.
+- **Asset Sorting**: Users can sort the asset list by name, category, and location.
+- **Filter by Period**: Users can filter the asset list by period.
+- **Export All Assets to CSV**: Users can export all assets to CSV format.
     `,
     images: [_1, _2, _3, _4, _5, _6],
     tags: ['Frontend', 'Backend'],
