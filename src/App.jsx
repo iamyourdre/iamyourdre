@@ -12,6 +12,7 @@ import Presale from './pages/portfolio/Presale';
 import ChatApp from './pages/portfolio/ChatApp';
 import Liqee from './pages/portfolio/Liqee';
 import Blockpilot from './pages/portfolio/Blockpilot';
+import ExpenseTracker from './pages/portfolio/ExpenseTracker';
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/portfolio/chatapp" element={<ChatApp />} />
         <Route path="/portfolio/liqee" element={<Liqee />} />
         <Route path="/portfolio/blockpilot" element={<Blockpilot />} />
+        <Route path="/portfolio/expensetracker" element={<ExpenseTracker />} />
       </Routes>
     </Router>
   );
