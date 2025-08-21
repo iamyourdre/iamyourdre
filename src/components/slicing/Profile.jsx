@@ -38,11 +38,11 @@ const Profile = () => {
       />
       <div className="flex flex-col rounded-xl px-7 py-9 md:pr-18 bg-foreground text-background text-2xl md:text-3xl leading-tight" ref={ref}>
         <div className="" ref={aboutRef} >
-          <p>Hi! I'm Adrian Sutansaty,</p>
-          <p>a recent graduate of Informatics Engineering, Sriwijaya University.</p>
-          <span>
-            I am a JavaScript fullstack developer specializing in Next.js and modern web technologies. I also have experience building Web3 dApps and DeFi solutions on the Ethereum blockchain.
-          </span>
+        <p>Hi! I'm Adrian Sutansaty,</p>
+        <p>a fresh graduate in Informatics Engineering from Sriwijaya University.</p>
+        <span>
+          I’m a JavaScript fullstack developer specializing in Next.js and modern web technologies. I also have hands-on experience building Web3 dApps and DeFi solutions on the Ethereum blockchain, combining strong technical expertise with a passion for creating impactful digital products.
+        </span>
         </div>
           <div className="flex items-end h-full mt-30">
             <Button className="

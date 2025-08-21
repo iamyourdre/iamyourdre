@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom'
 
 const certificate = [
   {
-    type: 'Certificate of Completion',
-    title: 'Fullstack Web Dev Academy',
-    source: 'Ministry of Education, Culture, Research and Technology',
+    type: 'Competency Certificate',
+    title: 'MSIB Fullstack Web Dev Academy',
+    source: 'Ministry of Education',
     link: 'https://drive.google.com/drive/folders/1a-8PwecEnPz7AiCE26qxSX4rL-IuF_ht',
     date: '2022'
   },
   {
     type: 'Certificate of Achievement',
-    title: 'Finalis MTQMN XVII : Al-Qur\'an Computer App Design',
-    source: 'Ministry of Education, Culture, Research and Technology',
+    title: 'Finalist, MTQMN XVII : Al-Qur\'an Computer App Design',
+    source: 'Ministry of Education',
     link: 'https://drive.google.com/drive/folders/1N8m1LI5mUrbV9Fwy_tNjoGXetKGtC2wS',
     date: '2023'
   },
@@ -28,7 +28,7 @@ const certificate = [
   },
   {
     type: 'Award',
-    title: 'Outstanding Alumni in Non-Academic Fields',
+    title: 'Outstanding Non-Academic Achiever',
     source: 'Sriwijaya University',
     link: 'https://drive.google.com/drive/folders/1VgxlaOwX-H9NdO73iNrRnlE2ngfiLzUs',
     date: '2024'

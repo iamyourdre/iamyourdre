@@ -6,48 +6,50 @@ import { Link } from 'react-router-dom'
 
 const experience = [
   {
-    title: 'Media And Information',
-    company: 'BEM KM Fasilkom Sriwijaya University',
+    title: 'Staff – Media & Information Department',
+    company: 'BEM KM Fasilkom Universitas Sriwijaya',
     date: '2021 - 2022',
     description: [
-      'PIC of Visual Design in the prestigious Technology Euphoria 2021 event.',
-      'Contributed to various webinars and competitions as a publication and documentation team.'
+      'Responsible for Visual Design at Technology Euphoria 2021, successfully attracting 500+ participants (200% increase from previous year) through creative strategies.',
+      'Led the Publication & Documentation Division in the 2021 “Bakti Desa” social program.',
+      'Contributed to multiple webinars and competitions as part of the publication & documentation team.'
     ],
     link: 'https://drive.google.com/drive/folders/1N8m1LI5mUrbV9Fwy_tNjoGXetKGtC2wS'
   },
   {
-    title: 'Internship as Information Technology Staff',
+    title: 'IT Intern – Software Developer',
     company: 'PT Bukit Asam Tbk',
-    date: '2022',
+    date: 'Jul 2022 – Aug 2022',
     description: [
-      'Leading a team of 3 people in developing an Asset Management Application.',
-      'Successfully digitized asset recording and created efficiency of up to 90%, reducing the process time from 1 hour to 5 minutes.',
-      'Completed the project with a final report score of 90 and received appreciation from the company.'
+      'Led a 3-member team to develop an Asset Management Application.',
+      'Successfully digitized asset recording, achieving up to 90% efficiency and reducing process time from 1 hour to 5 minutes.',
+      'Completed the project with a final report score of 90 and received company recognition.'
     ],
     link: 'https://drive.google.com/drive/folders/141flPjZNeW8O1hL-SsV2ObT3uguIdzEj'
   },
   {
-    title: 'Fullstack Web Dev Academy',
-    company: 'Ministry of Education, Culture, Research and Technology',
-    date: '2022',
+    title: 'Fullstack Web Developer Academy',
+    company: 'Independent Study Program – Kampus Merdeka, Ministry of Education',
+    date: 'Aug 2022 – Dec 2022',
     description: [
       'Completed a 4-month intensive training in web development with Laravel & Bootstrap.',
-      'Led a team of 5 developers to build a successful bookstore website delivered with outstanding results.'
+      'Led a 5-member developer team to build a bookstore website, successfully presented with excellent results.'
     ],
     link: 'https://drive.google.com/drive/folders/1a-8PwecEnPz7AiCE26qxSX4rL-IuF_ht'
   },
   {
     title: 'Technical Support',
     company: 'Hirehub – by Google, GoTo, and Traveloka',
-    date: '2024-2025',
+    date: 'Jan 2024 – Jan 2025',
     description: [
-      'Work with the developer team to patch bugs, perform frontend & backend checks, and submit daily technical reports.',
-      'Provide technical support to clients in using the HireHub recruitment platform.',
-      'Provide brief technical training to users on application features.'
+      'Ensured smooth user experience and maintained application quality.',
+      'Collaborated with developers to prepare daily technical reports.',
+      'Provided short training sessions to clients to support onboarding and adoption.'
     ],
     link: 'https://www.linkedin.com/company/hirehub-indonesia'
   },
 ]
+
 
 const Experience = () => {
   const title = useRef(null)
