@@ -1,5 +1,5 @@
 // filepath: c:\Users\iamyo\Code Box\JS_ENV\iamyourdre.github.io\src\components\slicing\Navbar.jsx
-import { Menu, Asterisk, Linkedin } from 'lucide-react'
+import { Menu, Asterisk, Linkedin, Mail, MailIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
@@ -57,8 +57,11 @@ const Navbar = ({ref}) => {
         ))}
       </div>
       <div className="flex-1 flex md:flex-none justify-end lg:col-span-1">
+        <RouterLink to="mailto:adriansutansaty260403@gmail.com" target="_blank">
+          <Button className="mr-2" variant="ghost"><MailIcon/></Button>
+        </RouterLink>
         <RouterLink to="https://www.linkedin.com/in/iamyourdre/" target="_blank">
-          <Button className="mr-2" variant="ghost"><Linkedin/> LinkedIn</Button>
+          <Button className="mr-2" variant="ghost"><Linkedin/></Button>
         </RouterLink>
       </div>
       <div className="md:hidden">

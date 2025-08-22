@@ -76,12 +76,12 @@ const Hero = () => {
   ]
   const contact = [
     {
-      icon: <Linkedin size={15} />,
-      link: 'https://www.linkedin.com/in/iamyourdre/'
-    },
-    {
       icon: <Mail size={15} />,
       link: 'mailto:adriansutansaty260403@gmail.com'
+    },
+    {
+      icon: <Linkedin size={15} />,
+      link: 'https://www.linkedin.com/in/iamyourdre/'
     },
   ]
 
@@ -140,7 +140,9 @@ const Hero = () => {
             <div className="flex gap-2" ref={buttonRef}>
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
               <Link to={contact[0].link} target='_blank'>
-                <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'><Linkedin />LinkedIn</Button>
+                <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>
+                  {contact[0].icon} Mail Me
+                </Button>
               </Link>
             </div>
           </div>

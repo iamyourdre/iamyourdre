@@ -51,7 +51,7 @@ const Portfolio = () => {
           </div>
           <div className="text-sm border border-muted rounded-2xl grid grid-cols-1 md:grid-cols-2">
             <PortoCard thumbnail={tweetify} title='Tweetify' tag={['Web Dev']} to='/portfolio/tweetify'/>
-            <PortoCard thumbnail={srjk} title='SRJK' tag={['Web Dev', 'Data Science']} to='/portfolio/srjk'/>
+            <PortoCard thumbnail={srjk} title='Major Recommendation System' tag={['Web Dev', 'Data Science']} to='/portfolio/srjk'/>
             <PortoCard thumbnail={expensetracker} title='Expense Tracker' tag={['Web Dev', '.NET']} to='/portfolio/expensetracker'/>
             <PortoCard thumbnail={ptba} title='PTBA Asset Management' tag={['App Dev']} to='/portfolio/ptba'/>
             <PortoCard thumbnail={liqee} title='Liqee | Social Media Services' tag={['eCommerce']} to='/portfolio/liqee'/>
