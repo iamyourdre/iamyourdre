@@ -29,19 +29,19 @@ const Profile = () => {
   }, [inView]);
 
   return (
-    <div className='h-full w-full overflow-hidden bg-transparent box grid lg:grid-cols-2 gap-5 py-20' id='about'>
+    <div className='h-full w-full overflow-hidden bg-transparent box grid md:grid-cols-2 gap-5 py-20' id='about'>
       <div
-        className="rounded-xl aspect-1/1 w-full bg-cover bg-center" 
+        className="rounded-xl aspect-1/1 md:aspect-auto w-full bg-cover bg-center" 
         style={{ backgroundImage:
           `url(${me})`
          }}
       />
-      <div className="flex flex-col rounded-xl px-7 py-9 md:pr-18 bg-foreground text-background text-2xl md:text-3xl leading-tight" ref={ref}>
+      <div className="flex flex-col rounded-xl px-7 py-9 md:pr-18 bg-foreground text-background text-2xl leading-tight" ref={ref}>
         <div className="" ref={aboutRef} >
         <p>Hi! I'm Adrian Sutansaty,</p>
         <p>a fresh graduate in Informatics Engineering from Sriwijaya University.</p>
         <span>
-          I’m a JavaScript fullstack developer specializing in Next.js and modern web technologies. I also have hands-on experience building Web3 dApps and DeFi solutions on the Ethereum blockchain, combining strong technical expertise with a passion for creating impactful digital products.
+          My approach is built on balance — the harmony between quality and creativity. I believe great products are born when technology and artistry meet halfway. Every line of code I write reflects precision, and every design choice I make embodies creativity, resulting in solutions that are not only functional but also meaningful.
         </span>
         </div>
           <div className="flex items-end h-full mt-30">

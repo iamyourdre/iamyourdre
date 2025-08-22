@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ArrowUpLeft, Asterisk, Linkedin, Mail } from 'lucide-react'
+import { ArrowUpLeft, Asterisk, Linkedin, Mail, NotepadText } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import * as THREE from 'three'
@@ -139,11 +139,11 @@ const Hero = () => {
             </h1>
             <div className="flex gap-2" ref={buttonRef}>
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
-              <Link to={contact[0].link} target='_blank'>
+              <a href={'https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing'}>
                 <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>
-                  {contact[0].icon} Mail Me
+                  <NotepadText /> Curriculum Vitae
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           <div className="h3-dre flex flex-col gap-8">
@@ -157,11 +157,19 @@ const Hero = () => {
             </div>
             <div className="flex gap-4 col-span-1 justify-start items-start">
               {contact.map((item, index) => (
-                <Link key={index} to={item.link} className="flex gap-2 items-center">
-                  <button className="p-2 rounded-full bg-foreground/10 text-muted-foreground">
-                    {item.icon}
-                  </button>
-                </Link>
+                item.link.startsWith('mailto:') ? (
+                  <a key={index} href={item.link} className="flex gap-2 items-center">
+                    <button className="p-2 rounded-full bg-foreground/10 text-muted-foreground">
+                      {item.icon}
+                    </button>
+                  </a>
+                ) : (
+                  <Link key={index} to={item.link} className="flex gap-2 items-center">
+                    <button className="p-2 rounded-full bg-foreground/10 text-muted-foreground">
+                      {item.icon}
+                    </button>
+                  </Link>
+                )
               ))}
             </div>
           </div>
