@@ -150,7 +150,7 @@ const Hero = () => {
             <div className="grid lg:grid-cols-3">
             <div className="text-muted-foreground col-span-2 text-justify" ref={aboutRef}>
               Hi! Welcome to my <span className='text-foreground'>Portfolio</span>. 
-              My name is Adrian Sutansaty, a <span className='text-foreground'>Web Developer</span> with a strong passion for creating impactful digital solutions. 
+              My name is Adrian Sutansaty, a <span className='text-foreground'>Full Stack Developer</span> with a strong passion for creating impactful digital solutions. 
               Here, you can explore <span className='text-foreground'>my projects</span>, <span className='text-foreground'>skills</span>, and <span className='text-foreground'>experiences</span>. 
               I’m always excited to collaborate and bring ideas to life—let’s connect and build something great together!
             </div>
