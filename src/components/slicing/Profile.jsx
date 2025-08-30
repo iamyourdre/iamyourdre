@@ -36,10 +36,10 @@ const Profile = () => {
           `url(${me})`
          }}
       />
-      <div className="flex flex-col rounded-xl px-7 py-9 md:pr-18 bg-foreground text-background text-2xl leading-tight" ref={ref}>
-        <div className="" ref={aboutRef} >
+      <div className="flex flex-col rounded-xl px-7 py-9 md:p-10 bg-foreground text-background text-2xl leading-tight" ref={ref}>
+        <div className="tracking-tight text-justify" ref={aboutRef} >
         <p>Hi! I'm Adrian Sutansaty,</p>
-        <p>a fresh graduate in Informatics Engineering from Sriwijaya University.</p>
+        <p>a fresh graduate in Informatics Engineering from Sriwijaya University. Experienced in academic projects and internships, focusing on both frontend and backend development. </p>
         <span>
           My approach is built on balance — the harmony between quality and creativity. I believe great products are born when technology and artistry meet halfway. Every line of code I write reflects precision, and every design choice I make embodies creativity, resulting in solutions that are not only functional but also meaningful.
         </span>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ArrowUpLeft, Asterisk, Linkedin, Mail, NotepadText } from 'lucide-react'
+import { ArrowUpLeft, Asterisk, Github, Linkedin, Mail, NotepadText } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import * as THREE from 'three'
@@ -139,9 +139,9 @@ const Hero = () => {
             </h1>
             <div className="flex gap-2" ref={buttonRef}>
               <Button size='lg' onClick={handleDiveDown}> Dive Down</Button>
-              <a href={'https://drive.google.com/drive/folders/1SCje_5a4qUhsjGSHd93n9UfLnQACvsHd?usp=sharing'}>
+              <a href={'https://github.com/iamyourdre'}>
                 <Button size='lg' variant='ghost' className='bg-foreground/20 text-foreground backdrop-blur-xl'>
-                  <NotepadText /> Curriculum Vitae
+                  <Github /> GitHub
                 </Button>
               </a>
             </div>
@@ -150,7 +150,7 @@ const Hero = () => {
             <div className="grid lg:grid-cols-3">
             <div className="text-muted-foreground col-span-2 text-justify" ref={aboutRef}>
               Hi! Welcome to my <span className='text-foreground'>Portfolio</span>. 
-              My name is Adrian Sutansaty, a <span className='text-foreground'>Full Stack Developer</span> with a strong passion for creating impactful digital solutions. 
+              My name is Adrian Sutansaty, a <span className='text-foreground'>Web Developer</span> with strong passion for creating impactful digital solutions. 
               Here, you can explore <span className='text-foreground'>my projects</span>, <span className='text-foreground'>skills</span>, and <span className='text-foreground'>experiences</span>. 
               I’m always excited to collaborate and bring ideas to life—let’s connect and build something great together!
             </div>
