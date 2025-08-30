@@ -37,17 +37,17 @@ const experience = [
     ],
     link: 'https://drive.google.com/drive/folders/1a-8PwecEnPz7AiCE26qxSX4rL-IuF_ht'
   },
-  {
-    title: 'Technical Support',
-    company: 'Hirehub – by Google, GoTo, and Traveloka',
-    date: 'Jan 2024 – Jan 2025',
-    description: [
-      'Ensured smooth user experience and maintained application quality.',
-      'Collaborated with developers to prepare daily technical reports.',
-      'Provided short training sessions to clients to support onboarding and adoption.'
-    ],
-    link: 'https://www.linkedin.com/company/hirehub-indonesia'
-  },
+  // {
+  //   title: 'Technical Support',
+  //   company: 'Hirehub – by Google, GoTo, and Traveloka',
+  //   date: 'Jan 2024 – Jan 2025',
+  //   description: [
+  //     'Ensured smooth user experience and maintained application quality.',
+  //     'Collaborated with developers to prepare daily technical reports.',
+  //     'Provided short training sessions to clients to support onboarding and adoption.'
+  //   ],
+  //   link: 'https://www.linkedin.com/company/hirehub-indonesia'
+  // },
 ]
 
 
