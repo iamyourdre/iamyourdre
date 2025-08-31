@@ -41,8 +41,8 @@ DApps NFT Starry Night Edition Drop is a narrative-driven ERC-1155 Drop dApp tha
     `,
     highlight: ['Web3', 'dApps', 'React.js', 'Tailwind CSS', 'Ethers.js', 'Web3.js', 'Solidity', 'Thirdweb', 'Vercel'],
     images: [_1, _2, _3, _4],
-    demo: 'https://nft-starry-night.vercel.app/',
-    github: 'https://github.com/iamyourdre/DApps-NFT-Starry-Night'
+    link: 'https://github.com/iamyourdre/DApps-NFT-Starry-Night',
+    demo: 'https://nft-starry-night.vercel.app/'
   }
   return (
     <div className='mt-16'>
