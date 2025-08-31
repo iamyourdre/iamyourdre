@@ -9,33 +9,40 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import _1 from '@/assets/portofolio/crowdfunding/1.png'
-import _2 from '@/assets/portofolio/crowdfunding/2.png'
+import _1 from '@/assets/portofolio/nftdrop/1.png'
+import _2 from '@/assets/portofolio/nftdrop/2.png'
+import _3 from '@/assets/portofolio/nftdrop/3.png'
+import _4 from '@/assets/portofolio/nftdrop/4.png'
 import Divider from '@/components/Divider'
 import { Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 
 
-const Crowdfunding = () => {
+const NFTDrop = () => {
   const details = {
-    title: 'Web3 Crowdfunding',
+    title: 'DApps NFT Starry Night Edition Drop',
     description: `
-A dApps crowdfunding platform built on the Ethereum blockchain. It allows users to create, manage, and contribute to crowdfunding campaigns using smart contracts.
 
-## Demo
+DApps NFT Starry Night Edition Drop is a narrative-driven ERC-1155 Drop dApp that lets users discover, preview, and claim limited digital collectibles through an interactive and immersive interface.
 
-The application is deployed on Vercel. You can access the demo [here](https://web3-crowdfunding-dre.vercel.app). Btw, please make sure you are using Testnet Sepolia Network.
+**Features**
 
-## Features
-- **Create Campaign**: Users can create a new campaign by providing a title, description, and minimum contribution.
-- **Contribute to Campaign**: Users can contribute to a campaign by providing a contribution amount.
-- **Track Campaign**: Users can view the details of a campaign, including the total amount raised, the number of contributors, and the manager's address.
-- **Request Withdrawal**: Campaign managers can create a withdrawal request to transfer funds from the campaign to a specific address.
+* Wallet connect, real-time claim button with price & supply.
+* Explore grid of NFTs with tilt, animation, and progress indicators.
+* NFT details page with preview, description toggle, and claim action.
+* Personal collection gallery fetched from on-chain balances.
+* Toast lifecycle for smooth feedback (loading → success/error).
+
+**Tech Stack**
+
+* **Frontend**: Next.js (App Router), React (TypeScript), Tailwind CSS, Sonner, Lucide Icons.
+* **Web3**: wagmi + viem for contract reads/writes, custom ERC1155 Drop Contract (mint/claim logic).
+* **Infra**: Vercel for deployment, IPFS metadata resolution, thirdweb for contract scaffolding.
     `,
     highlight: ['Web3', 'dApps', 'React.js', 'Tailwind CSS', 'Ethers.js', 'Web3.js', 'Solidity', 'Thirdweb', 'Vercel'],
-    images: [_1, _2],
-    demo: 'https://web3-crowdfunding-dre.vercel.app',
-    github: 'https://github.com/iamyourdre/Web3-Crowdfunding-App'
+    images: [_1, _2, _3, _4],
+    demo: 'https://nft-starry-night.vercel.app/',
+    github: 'https://github.com/iamyourdre/DApps-NFT-Starry-Night'
   }
   return (
     <div className='mt-16'>
@@ -92,4 +99,4 @@ The application is deployed on Vercel. You can access the demo [here](https://we
     </div>
   )
 }
-export default Crowdfunding
+export default NFTDrop

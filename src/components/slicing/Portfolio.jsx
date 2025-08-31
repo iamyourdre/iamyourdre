@@ -6,7 +6,8 @@ import crowdfunding from '@/assets/portofolio/crowdfunding/preview.png'
 import onecloud from '@/assets/portofolio/onecloud/preview.png'
 import liqee from '@/assets/portofolio/liqee/preview.png'
 import blockpilot from '@/assets/portofolio/blockpilot/preview.png'
-import chatapp from '@/assets/portofolio/chatapp/preview.png'
+import nftdrop from '@/assets/portofolio/nftdrop/preview.png'
+// import chatapp from '@/assets/portofolio/chatapp/preview.png'
 import expensetracker from '@/assets/portofolio/expensetracker/preview.png'
 import PortoCard from '../PortoCard'
 import { Button } from '../ui/button'
@@ -50,15 +51,16 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="text-sm border border-muted rounded-2xl grid grid-cols-1 md:grid-cols-2">
-            <PortoCard thumbnail={tweetify} title='Tweetify' tag={['Web Dev']} to='/portfolio/tweetify'/>
-            <PortoCard thumbnail={srjk} title='Major Recommendation System' tag={['Web Dev', 'Data Science']} to='/portfolio/srjk'/>
-            <PortoCard thumbnail={expensetracker} title='Expense Tracker' tag={['Web Dev', '.NET']} to='/portfolio/expensetracker'/>
-            <PortoCard thumbnail={ptba} title='PTBA Asset Management' tag={['App Dev']} to='/portfolio/ptba'/>
+            <PortoCard thumbnail={nftdrop} title='DApps NFT Edition Drop' tag={['Web3', 'DApps']} to='/portfolio/nftdrop'/>
             <PortoCard thumbnail={liqee} title='Liqee | Social Media Services' tag={['eCommerce']} to='/portfolio/liqee'/>
+            <PortoCard thumbnail={srjk} title='Major Recommendation System' tag={['Web Dev', 'Data Science']} to='/portfolio/srjk'/>
+            <PortoCard thumbnail={ptba} title='PTBA Asset Management' tag={['App Dev']} to='/portfolio/ptba'/>
+            <PortoCard thumbnail={crowdfunding} title='Web3 Crowdfunding' tag={['Web3', 'DApps']} to='/portfolio/crowdfunding'/>
             <PortoCard thumbnail={blockpilot} title='Blockpilot UI' tag={['Web Design', 'GSAP']} to='/portfolio/blockpilot'/>
-            <PortoCard thumbnail={crowdfunding} title='Web3 Crowdfunding' tag={['Web3', 'dApps']} to='/portfolio/crowdfunding'/>
+            <PortoCard thumbnail={tweetify} title='Tweetify' tag={['Web Dev']} to='/portfolio/tweetify'/>
+            <PortoCard thumbnail={expensetracker} title='Expense Tracker' tag={['Web Dev', '.NET']} to='/portfolio/expensetracker'/>
             <PortoCard thumbnail={onecloud} title='OneCloud Dashboard' tag={['UI/UX', 'Web Design']} to='/portfolio/onecloud'/>
-            <PortoCard thumbnail={chatapp} title='Chat App' tag={['Web Development']} to='/portfolio/chatapp'/>
+            {/* <PortoCard thumbnail={chatapp} title='Chat App' tag={['Web Development']} to='/portfolio/chatapp'/> */}
             <Link to={'https://github.com/iamyourdre'} className="p-2 md:border-r border-b border-muted even:border-r-0 last:border-b-0 md:nth-last-[2]:border-b-0">
               <div className="h-full flex justify-center items-center gap-2">
                 <Button variant='outline' className='w-full h-full' ><Github/><Badge className='bg-foreground'>github.com/iamyourdre</Badge></Button>

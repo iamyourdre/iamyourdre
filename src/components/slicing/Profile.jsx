@@ -39,12 +39,12 @@ const Profile = () => {
       <div className="flex flex-col rounded-xl px-7 py-9 md:p-10 bg-foreground text-background text-2xl leading-tight" ref={ref}>
         <div className="tracking-tight text-justify" ref={aboutRef} >
         <p>Hi! I'm Adrian Sutansaty,</p>
-        <p>a fresh graduate in Informatics Engineering from Sriwijaya University. Experienced in academic projects and internships, focusing on both frontend and backend development. </p>
+        <p>a fresh graduate in Informatics Engineering from Sriwijaya University. Experienced in academic projects and internships with React.js, Node.js, Java, .NET, and Web3 technologies. Passionate about crafting seamless user experiences and innovative web solutions.</p>
         <span>
           My approach is built on balance — the harmony between quality and creativity. I believe great products are born when technology and artistry meet halfway. Every line of code I write reflects precision, and every design choice I make embodies creativity, resulting in solutions that are not only functional but also meaningful.
         </span>
         </div>
-          <div className="flex items-end h-full mt-30">
+          <div className="flex items-end h-full mt-20">
             <Button className="
               bg-foreground border
               rounded-full

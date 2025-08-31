@@ -13,6 +13,7 @@ import ChatApp from './pages/portfolio/ChatApp';
 import Liqee from './pages/portfolio/Liqee';
 import Blockpilot from './pages/portfolio/Blockpilot';
 import ExpenseTracker from './pages/portfolio/ExpenseTracker';
+import NFTDrop from './pages/portfolio/NFTDrop';
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/portfolio/liqee" element={<Liqee />} />
         <Route path="/portfolio/blockpilot" element={<Blockpilot />} />
         <Route path="/portfolio/expensetracker" element={<ExpenseTracker />} />
+        <Route path="/portfolio/nftdrop" element={<NFTDrop />} />
       </Routes>
     </Router>
   );
